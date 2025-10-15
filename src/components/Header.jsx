@@ -8,14 +8,14 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo/Name */}
         <a href="#home" className="text-2xl font-bold text-indigo-600 hover:text-indigo-800 transition duration-300">
-          [Tu Nombre]
+          Andrés Quintana
         </a>
 
         {/* Navigation Menu (Desktop) */}
         <nav className="hidden md:flex space-x-8">
-          <a href="#about" className="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Sobre Mí</a>
-          <a href="#projects" className="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Proyectos</a>
-          <a href="#contact" className="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Contacto</a>
+          <a href="#about" className="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">About Me</a>
+          <a href="#projects" className="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Projects</a>
+          <a href="#contact" className="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Contact</a>
         </nav>
 
         {/* Menu Button (Mobile) */}
@@ -33,9 +33,9 @@ const Header = () => {
       {/* Dropdown Menu (Mobile) */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg pb-4">
-          <a href="#about" onClick={() => setIsOpen(false)} className="block px-6 py-2 text-gray-600 hover:bg-gray-100">Sobre Mí</a>
-          <a href="#projects" onClick={() => setIsOpen(false)} className="block px-6 py-2 text-gray-600 hover:bg-gray-100">Proyectos</a>
-          <a href="#contact" onClick={() => setIsOpen(false)} className="block px-6 py-2 text-gray-600 hover:bg-gray-100">Contacto</a>
+          <a href="#about" onClick={() => setIsOpen(false)} className="block px-6 py-2 text-gray-600 hover:bg-gray-100">About Me</a>
+          <a href="#projects" onClick={() => setIsOpen(false)} className="block px-6 py-2 text-gray-600 hover:bg-gray-100">Projects</a>
+          <a href="#contact" onClick={() => setIsOpen(false)} className="block px-6 py-2 text-gray-600 hover:bg-gray-100">Contact</a>
         </div>
       )}
     </header>
