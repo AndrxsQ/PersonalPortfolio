@@ -4,23 +4,23 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header className="sticky top-0 z-50 bg-black shadow-md">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo/Name */}
-        <a href="#home" className="text-2xl font-bold text-indigo-600 hover:text-indigo-800 transition duration-300">
+        <a href="#home" className="text-2xl font-bold text-yellow-400 hover:text-yellow-600 transition duration-300">
           Andrés Quintana
         </a>
 
         {/* Navigation Menu (Desktop) */}
         <nav className="hidden md:flex space-x-8">
-          <a href="#about" className="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">About Me</a>
-          <a href="#projects" className="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Projects</a>
-          <a href="#contact" className="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Contact</a>
+          <a href="#about" className="text-gray-300 hover:text-yellow-400 font-medium transition duration-300">About Me</a>
+          <a href="#projects" className="text-gray-300 hover:text-yellow-400 font-medium transition duration-300">Projects</a>
+          <a href="#contact" className="text-gray-300 hover:text-yellow-400 font-medium transition duration-300">Contact</a>
         </nav>
 
         {/* Menu Button (Mobile) */}
         <button
-          className="md:hidden text-gray-600 hover:text-indigo-600"
+          className="md:hidden text-gray-300 hover:text-yellow-400"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu"
         >
@@ -32,10 +32,10 @@ const Header = () => {
 
       {/* Dropdown Menu (Mobile) */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-lg pb-4">
-          <a href="#about" onClick={() => setIsOpen(false)} className="block px-6 py-2 text-gray-600 hover:bg-gray-100">About Me</a>
-          <a href="#projects" onClick={() => setIsOpen(false)} className="block px-6 py-2 text-gray-600 hover:bg-gray-100">Projects</a>
-          <a href="#contact" onClick={() => setIsOpen(false)} className="block px-6 py-2 text-gray-600 hover:bg-gray-100">Contact</a>
+        <div className="md:hidden bg-gray-900 shadow-lg pb-4">
+          <a href="#about" onClick={() => setIsOpen(false)} className="block px-6 py-2 text-gray-300 hover:bg-yellow-300">About Me</a>
+          <a href="#projects" onClick={() => setIsOpen(false)} className="block px-6 py-2 text-gray-300 hover:bg-yellow-300">Projects</a>
+          <a href="#contact" onClick={() => setIsOpen(false)} className="block px-6 py-2 text-gray-300 hover:bg-yellow-300">Contact</a>
         </div>
       )}
     </header>
