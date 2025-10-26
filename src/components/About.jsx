@@ -27,7 +27,7 @@ const About = () => {
             {skills.map((skill, index) => (
               <span 
                 key={index} 
-                className="px-4 py-1 text-sm border-1 border-yellow-400 font-medium text-yellow-400 bg-black rounded-full shadow-md"
+                className="px-4 py-1 font-semibold text-sm border-1 border-yellow-400 text-yellow-400 bg-black rounded-full shadow-md"
               >
                 {skill}
               </span>
