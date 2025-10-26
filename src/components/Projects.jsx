@@ -22,14 +22,14 @@ const Projects = () => {
   ];
 
   const ProjectCard = ({ project }) => (
-    <div className="bg-white rounded-xl shadow-xl hover:shadow-2xl transition duration-500 overflow-hidden border-t-4 border-indigo-600">
+    <div className="bg-gray-800 rounded-xl shadow-xl hover:shadow-2xl transition duration-500 overflow-hidden border-t-4 border-yellow-400">
       <div className="p-6">
-        <h4 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h4>
-        <p className="text-gray-600 mb-4">{project.description}</p>
-        
+        <h4 className="text-xl font-bold text-yellow-400 mb-2">{project.title}</h4>
+        <p className="text-white mb-4">{project.description}</p>
+
         <div className="flex flex-wrap gap-2 mb-4">
           {project.tech.map((t, i) => (
-            <span key={i} className="text-xs font-semibold px-3 py-1 bg-gray-200 text-gray-700 rounded-full">
+            <span key={i} className="text-xs font-semibold px-3 py-1 bg-yellow-400 text-black rounded-full">
               {t}
             </span>
           ))}
@@ -39,9 +39,9 @@ const Projects = () => {
           href={project.link} 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="text-indigo-600 font-semibold hover:text-indigo-800 transition duration-300 flex items-center"
+          className="text-yellow-400 font-semibold hover:text-yellow-600 transition duration-300 flex items-center"
         >
-          Ver Proyecto 
+          View Project
           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
         </a>
       </div>
@@ -49,10 +49,10 @@ const Projects = () => {
   );
 
   return (
-    <section id="projects" className="bg-white py-20">
+    <section id="projects" className="bg-gray-900 py-20">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-14">
-          Proyectos Destacados 🚀
+        <h2 className="text-4xl font-bold text-center text-yellow-400 mb-14">
+          Featured Projects
         </h2>
 
         {/* Grid de Proyectos */}
