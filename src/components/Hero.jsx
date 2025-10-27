@@ -1,3 +1,5 @@
+import professionalImage from '/src/assets/image.jpg';
+
 const Hero = () => {
   return (
     <section id="home" className="bg-gray-900 py-20 md:py-32">
@@ -25,7 +27,7 @@ const Hero = () => {
         <div className="md:w-1/2 flex justify-center">
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-yellow-400">
             <img 
-              src="/src/assets/image.jpg" 
+              src={professionalImage} 
               alt="Professional profile picture" 
               className="object-cover w-full h-full"
             />
