@@ -2,10 +2,10 @@ const Projects = () => {
   // Datos de ejemplo para los proyectos
   const projectData = [
     {
-      title: 'Plataforma de E-Learning',
-      description: 'Una aplicación de aprendizaje en línea con autenticación, seguimiento de progreso y pasarela de pago.',
-      tech: ['React', 'Redux', 'Node.js', 'PostgreSQL'],
-      link: '#',
+      title: 'Personal Project',
+      description: 'My professional personal portfolio website. A comprehensive showcase of my projects, skills, and technical expertise.',
+      tech: ['React.js', 'Tailwind CSS'],
+      link: 'https://andrxsq.github.io/PersonalPortfolio/',
     },
     {
       title: 'Landing Page para Startup',
