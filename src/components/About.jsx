@@ -1,7 +1,7 @@
 const About = () => {
   // Lista de habilidades para mostrar con estilo de badges
   const skills = [
-    'HTML5', 'CSS3', 'JavaScript (ES6+)', 'React', 'Vue', 'Tailwind CSS', 'Node.js', 
+    'HTML5', 'CSS3', 'JavaScript (ES6+)', 'React.js', 'Vue', 'Tailwind CSS', 'Node.js', 
     'Go', 'Gin', 'Python', 'PostgreSQL', 'MongoDB', 'APIs REST', 'Git/GitHub'
   ];
 
@@ -23,7 +23,7 @@ const About = () => {
           <h3 className="text-2xl font-semibold text-yellow-400 mb-4 border-b pb-2 border-yelow-400">
             Technical Skills (Tech Stack)
           </h3>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 mb-8">
             {skills.map((skill, index) => (
               <span 
                 key={index} 
@@ -33,6 +33,21 @@ const About = () => {
               </span>
             ))}
           </div>
+
+          <h3 className="text-2xl font-semibold text-yellow-400 mb-4 border-b pb-2 border-yelow-400">
+            Curriculum Vitae
+          </h3>
+          <p className="text-lg text-white leading-relaxed mb-4">
+            You can download and take a look to my CV clicking the button below
+          </p>
+          <a
+            className="bg-yellow-400 hover:bg-yellow-500 mb-8 text-black font-bold py-2 px-4 rounded-full transition duration-300 transform"
+            href="/CV_AndresQuintana_English.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            View CV
+          </a>
         </div>
       </div>
     </section>
