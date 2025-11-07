@@ -14,7 +14,7 @@ const Hero = () => {
             and Systems Engineering Student. From Cartagena, Colombia. Improving my technical stack and looking forward learn new techs.
           </p>
           <div className="mt-8 flex space-x-4">
-            <a href="#projects" className="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-lg shadow-lg hover:bg-yellow-600 transition duration-300 transform hover:scale-105">
+            <a href="#projects" className="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300 transform hover:scale-105">
               Explore Projects
             </a>
             <a href="#contact" className="px-6 py-3 border border-yellow-400 text-yellow-400 font-semibold rounded-lg hover:border-white hover:bg-white hover:text-black transition duration-300">
